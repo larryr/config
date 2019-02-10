@@ -1,0 +1,35 @@
+Hello!
+10 feb 2019
+Tags: go 
+
+Larry Rau
+
+* Endpoint Configuration
+- config controlled by cloud
+- cloud instance is the _truth_
+- local config access is always read only
+- local config updated via a server initiated sync op
+- cloud can always verify the local config
+
+* Configuration Paradigm
+- endpoint services use file-stream commands to read configuraiton from a system specified area
+- endpoint configuration is locally managed by a single config service
+- endpoint config service controlled by cloud
+- cloud config manager sends messages for update/verify/init/rollback
+- endpoint config service syncs to cloud
+
+* Configuration using Git
+- endpoing config service acts as a git client
+- config initialization or reset is a _griet_clone_
+- config sync with server is a _git pull_
+- a rollback to previous version is a _git checkout_
+- the git hashcode represents the tree _version_
+
+* Config tree structure
+`/config/svc/telex`
+`/config/svc/suricata`
+`/config/svc/prez`
+
+
+* Sample Shell Script
+.play -edit gotalk/a.sh 

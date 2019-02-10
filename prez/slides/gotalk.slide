@@ -1,0 +1,27 @@
+Why Go?
+because
+20 Sep 2014
+Tags: go, verizon, lunch-talk
+
+Larry Rau
+Director Technology, Verizon
+lawrence.rau@verizonwireless.com
+
+* Numbers
+- 20
+- 10
+- 2
+
+* Features
+- static typed
+- concurrencies
+
+* Commercial Uses
+- You Tube
+- Ubuntu
+
+* Sample Go progroam
+.play -edit gotalk/x.go
+
+* Sample Shell Script
+.play -edit gotalk/a.sh 
